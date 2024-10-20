@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+
+*{
+    z-index: 0;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-variation-settings: 5 100;
+}
+
+body em {
+    font-style: italic;
+}
+
+.TopicP{
+    margin: 20px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 20px;
+    color: white;
+    border-image: linear-gradient(to right, rgb(112, 112, 146),rgb(240, 210, 255)) 40;
+}
+
+blockquote{
+    letter-spacing: 2px;
+}
+#profile{
+    position:static;
+    text-align: center;
+    margin: 20px;
+    color:aliceblue;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #6a6772;
+    color: purple;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+body{
+    /* background-image: url(https://w0.peakpx.com/wallpaper/962/273/HD-wallpaper-vertical-digital-art-simple-background-astronaut-fishing-rod.jpg); */
+    background-color:rgb(45, 45, 53);
+}
+
+h2,h3{
+    font-size: 30px;
+    border: 3px solid;
+    border-radius: 20px;
+    border-image: linear-gradient(to right, darkblue,darkorchid) 1;
+    color: linear-gradient(45deg, #f3ec78, #af4261);
+    margin: 10px;
+    padding-top: 10px;
+    text-shadow: 0 0 3px #8fafc2, 0 0 5px #2a3141;
+}
