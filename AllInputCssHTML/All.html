@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5 65543206002-9</title>
+
+    <style>
+        .container{
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            font-size: 13px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 0.1px;
+        }
+        
+        .lastname span{
+            padding-right: 42px;
+        }
+        .firstname span{
+            padding-right: 40px
+        }
+
+        .gender{
+            padding: 0;
+            margin: 0;
+        }
+
+        .Birth span{
+            margin-right: 70px;
+        }    
+
+        select {
+            margin-right: 10px;
+        }
+
+        .gender #male{
+            margin: 0px 0px 20px 55px;
+        }
+
+        fieldset{
+            margin: 0 20px
+        }
+        
+        #firstname{
+            background-color: #cdc5bf;
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        #lastname{
+            background-color: #98fb98;
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        #username{
+            width: 120px;
+            border: blue 2px solid;
+            margin-bottom: 15px;
+            margin-left: 50px;
+        }
+
+        #password{
+            width: 120px;
+            border: red 2px solid;
+            margin-bottom: 15px;
+            margin-left: 55px;
+        }
+
+        #re-password{
+            width: 120px;
+            border: red 2px solid;
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+
+        #email{
+            width: 180px;
+            border: blue 2px solid;
+            margin-bottom: 15px;
+            margin-left: 75px;
+        }
+
+        #PI::first-letter,
+        #AI::first-letter{
+            font-size: 25px;
+            color: red;
+        }
+
+        .check{
+            padding-left: 5px;
+        }
+
+        .personal-info{
+            margin: 5px;
+        }
+
+        button{
+            padding: 5px 20px;
+            margin: 15px 0px 10px 120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend id="PI">Personal Info</legend>
+            <div class="personal-info">
+                <div class="firstname">
+                    <span>First name : </span>
+                    <input type="text" id="firstname">
+                </div>
+                <div class="lastname">
+                    <span>Last name : </span>
+                    <input type="text" id="lastname">
+                </div>
+                <div class="gender">
+                    <span>Gender : </span>
+                    <input type="radio" id="male" name="gender">
+                    <span for="male">Male</span>
+                    <input type="radio" id="female" name="gender">
+                    <span for="female">Female</span>
+                </div>
+                <div class="Birth">
+                    <span id="birth">Birth : </span>
+                        <select name="day" id="day">
+                            <option value="" selected>-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <select name="month" id="month">
+                            <option value="" selected>-</option>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="" selected>-</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                        </select>
+                </div> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend id="AI">Account Info</legend>
+            <div class="AccountInfo">
+                <div class="username">
+                    <span>Username : </span>
+                    <input type="text" id="username">
+                </div>
+                <div class="password">
+                    <span>Password : </span>
+                    <input type="password" id="password">
+                </div>
+                <div class="re-password">
+                    <span>Confirm Password : </span>
+                    <input type="password" id="re-password">
+                </div>
+                <div class="email">
+                    <span>E-mail : </span>
+                    <input type="email" id="email">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox">
+                    <span class="check">I agree to the Terms of Service and Privacy Policy.</span>
+                </div>
+                <div>
+                    <button class="smBtn">Submit</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
